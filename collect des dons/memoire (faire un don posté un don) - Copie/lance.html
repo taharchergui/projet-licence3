@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lancé un don</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="des.css">
+    <style>
+        .card-title {
+            margin-top: 1rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        .card-text {
+            margin-bottom: 1rem;
+        }
+
+        .card-footer {
+            border-top: none;
+        }
+
+        .card-footer .btn-sm {
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="#">Al-Ihsan</a>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-invest-monitor"></i>
+                        <span>Mes dons</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                       <i class="lni lni-handshake"></i>
+                        <span>lancé un projet</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-consulting"></i>
+                        <span>Consult dons</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-link">
+                    <i class="lni lni-exit"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="Capture8.PNG" class="rounded-pill" width="40">
+                    </a>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </form>
+                </div>
+            </nav>
+
+            <!-- Header -->
+            <header class="bg-primary text-white text-center py-3">
+                <div class="container">
+                    <h1>Lancement de Projet </h1>
+                    <p>Ensemble, faisons la différence</p>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="container my-5">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Soumettre un Nouveau Projet</h2>
+                            </div>
+                            <div class="card-body">
+                                <form action="submit_project.php" method="post" id="projectForm" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <label for="projectName">Nom du Projet</label>
+                                        <input type="text" class="form-control" id="projectName" name="projectName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="projectDescription">Description du Projet</label>
+                                        <textarea class="form-control" id="projectDescription" name="projectDescription" rows="5" required></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="projectGoal">Objectif de Collecte (en €)</label>
+                                        <input type="number" class="form-control" id="projectGoal" name="projectGoal" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="beneficiaryName">Nom du Bénéficiaire</label>
+                                        <input type="text" class="form-control" id="beneficiaryName" name="beneficiaryName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="beneficiaryEmail">Email du Bénéficiaire</label>
+                                        <input type="email" class="form-control" id="beneficiaryEmail" name="beneficiaryEmail" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fichier">Sélectionner un fichier (PDF, image, etc.) :</label>
+                                        <input type="file" class="form-control-file" id="fichier" name="fichier" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Soumettre le Projet</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+           
+
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="scripts.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

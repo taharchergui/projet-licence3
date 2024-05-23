@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faire un Don</title>
+    <link rel="stylesheet" href="styleee.css">
+</head>
+<body>
+    <div class="donation-form">
+        <h2>Faire un Don</h2>
+
+        <!-- Partie 1: Informations Personnelles -->
+        <div class="personal-info">
+            <h3>Informations Personnelles</h3>
+            <input type="text" id="name" placeholder="Nom Prénom">
+            <input type="email" id="email" placeholder="Email">
+        </div>
+
+        <!-- Partie 2: Montant et Type de Don -->
+        <div class="donation-details">
+            <h3>Montant et Type de Don</h3>
+            <div class="donation-type">
+                <div>
+                    <input type="checkbox" id="donation-ponctuel" onclick="selectDonationType('ponctuel')">
+                    <label for="donation-ponctuel">Don Ponctuel</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="donation-mensuel" onclick="selectDonationType('mensuel')">
+                    <label for="donation-mensuel">Don Mensuel</label>
+                </div>
+            </div>
+            
+            <input type="number" id="amount"  placeholder="Montant (DZ)">
+        </div>
+
+        <!-- Partie 3: Mode de Paiement -->
+        <div class="payment-method">
+            <h3>Mode de Paiement</h3>
+            <label for="card-type">Choix de Carte :</label>
+            <select id="card-type">
+                <option value="carte">Carte d'ahbia</option>
+                <option value="BANQUE">Craditbanquer</option>
+                <option value="amex">Sociétie générale </option>
+                <option value="mastercard">auther</option>
+            </select>
+            <input type="text" id="card-number" placeholder="Numéro de Carte">
+            <input type="text" id="expiry-date" placeholder="Date d'expiration">
+            <input type="text" id="cvv" placeholder="CVV">
+        </div>
+
+        <!-- Bouton de Confirmation (déplacé sous la partie Mode de Paiement) -->
+        <div class="confirm-donation">
+            <button onclick="confirmDonation()">Confirmer Don</button>
+            <p>Ajoutez une contribution pour que la plateforme reste gratuite à 100%.</p>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>

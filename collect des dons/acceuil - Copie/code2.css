@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Style pour le Navbar */
+header {
+    background-color: #cfe1f5; /* Couleur de fond du header */
+    color: #fff; /* Couleur du texte */
+    padding: 15px 0; /* Espacement intérieur du header */
+    
+}
+
+nav ul {
+    list-style: none; /* Supprime les puces de liste */
+    text-align: center; /* Centre les éléments de la liste */
+}
+
+nav ul li {
+    display: inline-block; /* Affiche les éléments de liste en ligne */
+    margin-right: 20px; /* Espacement entre les éléments */
+}
+
+nav ul li a {
+    color: #fff; /* Couleur du lien */
+    text-decoration: none; /* Supprime la soulignement du lien */
+    font-size: 16px; /* Taille de la police */
+    text-transform: uppercase; /* Met le texte en majuscules */
+    transition: color 0.3s; /* Transition pour le changement de couleur */
+}
+
+.nav-link:hover {
+    color: #e7eff0;
+}
+
+/* Logo styles */
+.logo {
+    height: 50px; /* Adjust the height of the logo */
+    width: auto; /* Maintain the aspect ratio */
+}
+header .highlight, header .current a {
+    color: #bee6f1;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #e1eaeb;
+    font-weight: bold;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(image.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* Style pour la section hero */
+.hero {
+    background: #71a6eb; /* Couleur de fond */
+    color: #080000; /* Couleur du texte */
+    padding: 60px 0; /* Espacement intérieur */
+    text-align: center; /* Alignement du contenu */
+}
+
+/* Conteneur principal pour le contenu de la hero */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Espacement entre les éléments */
+}
+
+/* Style pour l'image */
+.hero-image {
+    width: 200px; /* Largeur de l'image */
+    height: 200px; /* Hauteur de l'image */
+    object-fit: cover; /* Ajustement de l'image pour remplir le conteneur */
+    border-radius: 50%; /* Coins arrondis */
+}
+
+/* Style pour le texte */
+.hero-text {
+    max-width: 80%; /* Largeur maximale du texte */
+}
+
+/* Titre dans la section hero */
+.hero-text h2 {
+    font-size: 28px; /* Taille de la police */
+    margin-bottom: 20px; /* Espacement en bas */
+}
+
+/* Paragraphes dans la section hero */
+.hero-text p {
+    font-size: 18px; /* Taille de la police */
+    line-height: 1.6; /* Hauteur de ligne */
+    margin-bottom: 20px; /* Espacement en bas */
+}
+
+/* Bouton dans la section hero */
+.btn {
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    background: #fff; /* Couleur de fond du bouton */
+    color: #0873ee; /* Couleur du texte du bouton */
+    border: none; /* Supprimer la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none; /* Supprimer la soulignement du texte */
+    transition: background 0.3s; /* Transition pour l'effet au survol */
+}
+
+/* Style au survol du bouton */
+.btn:hover {
+    background: #e9e9e9; /* Couleur de fond au survol */
+}
+
+
+section {
+    padding: 40px 0;
+}
+
+.about, .projects, .reviews, .contact {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.about h2, .projects h2, .reviews h2, .contact h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.projects-grid, .reviews-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espace entre les projets et avis */
+    justify-content: center;
+}
+
+.project, .review {
+    flex: 1 1 calc(33.333% - 20px); /* Ajuste la largeur pour 3 colonnes avec espace */
+    background: #f4f4f4;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    min-width: 250px; /* Largeur minimale des projets et avis */
+    max-width: 300px; /* Largeur maximale des projets et avis */
+}
+
+.project p, .review p {
+    margin: 10px 0;
+}
+
+.project .btn, .review .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #6db6cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.project .btn:hover, .review .btn:hover {
+    background: #5da8bb;
+}
+
+.project:hover, .review:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Limiter la largeur du formulaire */
+    margin: 0 auto; /* Centrer le formulaire horizontalement */
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .btn {
+    padding: 10px 20px;
+    background: #6db9cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form .btn:hover {
+    background: #1ec5e2;
+}
+/* Reviews section styles */
+.reviews {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.review {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    margin: 0 0 10px;
+}
+
+.review p strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}

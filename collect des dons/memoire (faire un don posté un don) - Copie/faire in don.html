@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de faire de don</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="design.css">
+    <style>
+        .card-title {
+            margin-top: 1rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        .card-text {
+            margin-bottom: 1rem;
+        }
+
+        .card-footer {
+            border-top: none;
+        }
+
+        .card-footer .btn-sm {
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="#">Al-Ihsan</a>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-invest-monitor"></i>
+                        <span>Mes dons</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-revenue"></i>
+                        <span>Faire un don</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-heart"></i>
+                        <span>Liste favoris</span>
+                    </a>
+                </li>
+                
+               
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-link">
+                    <i class="lni lni-exit"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="Capture8.PNG" class="rounded-pill" width="40">
+                    </a>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </form>
+                </div>
+            </nav>
+            <section id="projects" class="projects py-5">
+                <div class="container">
+                    <h2 class="text-center mb-5">Nos Projets</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="sign.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Projet 1: Éducation pour Tous</h3>
+                                    <p class="card-text">Fournir des ressources éducatives aux enfants défavorisés.</p>
+                                    <p class="card-text"><strong>Montant de Dons: 5000DZ</strong></p>
+                                    <a href="#donate" class="btn btn-primary">Faire un Don</a>
+                                </div>
+                                <div class="card-footer bg-transparent border-top d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Dernière mise à jour il y a 12 JOURS</small>
+                                    <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                            class="lni lni-heart"></i> Ajouter aux favoris</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="donate.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Projet 2: Accès à l'Eau Potable</h3>
+                                    <p class="card-text">Installer des systèmes de purification d'eau dans les villages ruraux.</p>
+                                    <p class="card-text"><strong>Montant de Dons: 8000DZ</strong></p>
+                                    <a href="#donate" class="btn btn-primary">Faire un Don</a>
+                                </div>
+                                <div class="card-footer bg-transparent border-top d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Dernière mise à jour il y a 12 minutes</small>
+                                    <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                            class="lni lni-heart"></i> Ajouter aux favoris</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="Capture.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Projet 3: Soins de Santé</h3>
+                                    <p class="card-text">Fournir des soins médicaux gratuits dans les zones pauvres.</p>
+                                    <p class="card-text"><strong>Montant de Dons: 12000DZ</strong></p>
+                                    <a href="#donate" class="btn btn-primary">Faire un Don</a>
+                                </div>
+                                <div class="card-footer bg-transparent border-top d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Dernière mise à jour il y a 2 minutes</small>
+                                    <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                            class="lni lni-heart"></i> Ajouter aux favoris</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="Capture2.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Projet 4: Nourriture pour les Familles</h3>
+                                    <p class="card-text">Distribuer des paniers alimentaires aux familles dans le besoin.</p>
+                                    <p class="card-text"><strong>Montant de Dons: 3000DZ</strong></p>
+                                    <a href="#donate" class="btn btn-primary">Faire un Don</a>
+                                </div>
+                                <div class="card-footer bg-transparent border-top d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Dernière mise à jour il y a 2 JOURS</small>
+                                    <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                            class="lni lni-heart"></i> Ajouter aux favoris</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="Capture5.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Projet 5: Vêtements pour les Victimes de Catastrophes Naturelles</h3>
+                                    <p class="card-text"> Collecte de fonds pour acheter des vêtements adaptés aux conditions climatiques locales et aux besoins des victimes.</p>
+                                    <p class="card-text"><strong>Montant de Dons: 15000DZ</strong></p>
+                                    <a href="#donate" class="btn btn-primary">Faire un Don</a>
+                                </div>
+                                <div class="card-footer bg-transparent border-top d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Dernière mise à jour il y a 12 minutes</small>
+                                    <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                            class="lni lni-heart"></i> Ajouter aux favoris</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="Capture3.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Projet 6: Acheter des uniformes scolaires pour les enfants des familles à faible revenu.
+                                    </h3>
+                                    <p class="card-text">Collecte de fonds pour fournir des uniformes complets, y compris les chaussures et les sacs à dos.</p>
+                                    <p class="card-text"><strong>Montant de Dons: 7000DZ</strong></p>
+                                    <a href="#donate" class="btn btn-primary">Faire un Don</a>
+                                </div>
+                                <div class="card-footer bg-transparent border-top d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Dernière mise à jour il y a 12 minutes</small>
+                                    <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                            class="lni lni-heart"></i> Ajouter aux favoris</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="Capture6.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Projet 7: Opérations Cardiaques pour les Enfants</h3>
+                                    <p class="card-text">Collecte de fonds pour les coûts d’exploitation et les soins postopératoires pour un enfant d’une famille à faible revenu</p>
+                                    <p class="card-text"><strong>Montant de Dons: 6000DZ</strong></p>
+                                    <a href="#donate" class="btn btn-primary">Faire un Don</a>
+                                </div>
+                                <div class="card-footer bg-transparent border-top d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">Dernière mise à jour il y a 2 HEURE</small>
+                                    <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                            class="lni lni-heart"></i> Ajouter aux favoris</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
